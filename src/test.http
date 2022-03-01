@@ -1,0 +1,13 @@
+GET http://localhost:3000
+
+### all cats
+GET http://localhost:3000/cats
+
+### one cat
+GET http://localhost:3000/cats/1
+
+### create cats
+POST http://localhost:3000/cats
+
+### all users
+GET http://localhost:3000/user
