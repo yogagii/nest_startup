@@ -6,6 +6,7 @@ export class CatsService {
   private readonly cats: Cat[] = [];
 
   create(cat: Cat) {
+    console.log('create cat: ', cat);
     this.cats.push(cat);
   }
 

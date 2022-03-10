@@ -8,6 +8,27 @@ GET http://localhost:3000/cats/1
 
 ### create cats
 POST http://localhost:3000/cats
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJwYXNzIjoicm9vdCIsInJvbGVzIjpbImFkbWluIl0sImlhdCI6MTY0NjczNzM4OCwiZXhwIjoxNjQ2NzM3OTg4fQ.ygefZLA5NFjFCrHXwf7_jikEU96B70CLF3kJP6MnBfs
+Content-Type: application/json
+
+{
+  "name": "huahua",
+  "age": 1,
+  "breed": "Ragdoll"
+}
 
 ### all users
-GET http://localhost:3000/user
+GET http://localhost:3000/users
+
+### login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "root",
+  "password": "root"
+}
+
+### profile
+GET http://localhost:3000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJwYXNzIjoiak94ajFmMnE1L3BPWngzNG9POHlUQT09Iiwicm9sZXMiOlsiYWRtaW4iXSwiaWF0IjoxNjQ2ODE2MjIyLCJleHAiOjE2NDY4MTY4MjJ9.W5OKpvW4lDjHRdrWn2LmAiYLUJowLZJu7EdfjJ_bMNM
